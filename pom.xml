@@ -75,7 +75,12 @@
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.9.1.2184</version>
+                <configuration>
+                    <sonar.sources>src/main/java</sonar.sources>
+                    <sonar.tests>src/test/java</sonar.tests>
+                </configuration>
             </plugin>
+
 
         </plugins>
     </build>
@@ -86,8 +91,8 @@
         <maven.compiler.target>17</maven.compiler.target>
         <lwjgl.version>3.3.1</lwjgl.version>
         <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/jacoco-coverage/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
-        <sonar.projectKey>PaulaDariasSosa_Proyecto_LDH</sonar.projectKey>
-        <sonar.organization>ldhequipopacman</sonar.organization>
+        <sonar.projectKey>DanielDRP_Proyecto_LDHTEST</sonar.projectKey>
+        <sonar.organization>danieldrp</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
